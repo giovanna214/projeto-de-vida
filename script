@@ -72,3 +72,33 @@ botoes.forEach((botao, indice) => {
 
 // Mostra o primeiro objetivo ao abrir a página
 mostrarObjetivo(0);
+```javascript
+function mostrarIngles() {
+
+    const lista = document.getElementById("lista");
+
+    lista.innerHTML = `
+        <h2>📚 Meus próximos passos para aprender inglês</h2>
+
+        <li>🇬🇧 Aprender o básico da língua inglesa</li>
+
+        <li>🧠 Aumentar meu vocabulário todos os dias</li>
+
+        <li>🎧 Praticar listening com músicas, filmes e vídeos em inglês</li>
+
+        <li>🗣️ Treinar minha conversação e pronúncia</li>
+
+        <li>✍️ Praticar escrita em inglês</li>
+
+        <li>📖 Estudar gramática e tempos verbais</li>
+
+        <li>💬 Tentar pensar e falar em inglês diariamente</li>
+
+        <li>🎯 Fazer um curso de inglês</li>
+
+        <li>🌎 Praticar com pessoas que falam inglês</li>
+
+        <li>🏆 Alcançar um nível de fluência cada vez maior</li>
+    `;
+}
+```
