@@ -130,6 +130,7 @@ body {
     font-size: 16px;
     box-sizing: border-box;
     outline: none;
+    cursor: default;
 }
 
 .input-objetivo:focus {

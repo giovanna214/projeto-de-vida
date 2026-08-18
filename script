@@ -14,17 +14,3 @@ for (let i = 0; i < botoes.length; i++) {
         textos[i].classList.add("ativo");
     }
 }
-
-// Atualiza o link do botão dinamicamente quando o usuário digita na caixa do LinkedIn
-const inputLinkedin = document.getElementById("input-linkedin");
-const btnLinkedin = document.getElementById("btn-linkedin");
-
-if (inputLinkedin && btnLinkedin) {
-    inputLinkedin.addEventListener("input", function () {
-        let url = inputLinkedin.value.trim();
-        if (url !== "" && !url.startsWith("http://") && !url.startsWith("https://")) {
-            url = "https://" + url;
-        }
-        btnLinkedin.href = url;
-    });
-}
