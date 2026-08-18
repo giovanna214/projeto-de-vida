@@ -1,16 +1,19 @@
-// Seleciona todos os 4 botões e todas as 4 caixas de conteúdo
-const botoes = document.querySelectorAll(".botao");
-const textos = document.querySelectorAll(".conteudo-objetivo");
+document.addEventListener("DOMContentLoaded", function () {
+    const botoes = document.querySelectorAll(".botao");
+    const textos = document.querySelectorAll(".conteudo-objetivo");
 
-// Alternar abas ao clicar nos botões
-for (let i = 0; i < botoes.length; i++) {
-    botoes[i].onclick = function () {
-        for (let j = 0; j < botoes.length; j++) {
-            botoes[j].classList.remove("ativo");
-            textos[j].classList.remove("ativo");
-        }
+    // Adiciona o evento de clique em todos os botões
+    botoes.forEach((botao, indice) => {
+        botao.addEventListener("click", () => {
+            // Remove a classe ativo de todos os botões e conteúdos
+            botoes.forEach(b => b.classList.remove("ativo"));
+            textos.forEach(t => t.classList.remove("ativo"));
 
-        botoes[i].classList.add("ativo");
-        textos[i].classList.add("ativo");
-    }
-}
+            // Adiciona a classe ativo apenas no botão e no conteúdo clicado
+            botao.classList.add("ativo");
+            if (textos[indice]) {
+                textos[indice].classList.add("ativo");
+            }
+        });
+    });
+});
