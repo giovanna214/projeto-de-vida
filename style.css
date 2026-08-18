@@ -103,7 +103,7 @@ body {
 
 /* Exibe apenas o bloco com a classe ativo */
 .conteudo-objetivo.ativo {
-    display: block;
+    display: block !important;
 }
 
 .conteudo-objetivo h3 {
