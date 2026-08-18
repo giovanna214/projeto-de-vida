@@ -13,9 +13,8 @@ body {
     background-color: var(--cor-de-fundo);
     color: var(--branco);
     font-family: 'Chakra Petch', sans-serif;
-    margin: 0;
-    padding: 2em;
 }
+
 
 .conteudo-principal {
     display: flex;
@@ -31,16 +30,10 @@ body {
     text-align: left;
     width: 100%;
     font-size: 32px;
-    margin-bottom: 1em;
 }
 
 .titulo-principal span {
     color: var(--verde);
-}
-
-.botoes {
-    display: block;
-    width: 100%;
 }
 
 .botao {
@@ -57,43 +50,34 @@ body {
     border-left: 2px solid var(--botao-ativo);
     border-right: 2px solid var(--botao-ativo);
     border-top: none;
-    cursor: pointer;
-    box-sizing: border-box;
-    transition: 0.3s;
-}
-
-/* Estado ativo do botão clicado */
-.botao.ativo {
-    background-color: var(--botao-ativo);
-    border-bottom: 4px solid var(--verde);
 }
 
 .botao:first-child {
-    border-radius: 20px 20px 0 0;
+    border-radius: 40px 40px 0 0;
 }
 
-/* Responsividade para telas maiores */
+.botoes {
+    display: block;
+}
 @media screen and (min-width: 768px) {
-    .botoes {
-        display: flex;
-    }
-
-    .botao:first-child {
-        border-radius: 20px 0 0 0;
-    }
-
-    .botao:last-child {
-        border-radius: 0 20px 0 0;
-    }
+.botoes {
+    display: flex;
+  }
 }
-
-.aba-conteudo {
-    width: 100%;
+@media screen and (min-width: 768px) {
+  /* Código omitido */
 }
+  .botao:last-child {
+    border-radius: 0 40px 0 0;
+  }
+@media screen and (min-width: 768px) {
+  /* Código omitido */
 
-/* Oculta os conteúdos por padrão */
-.conteudo-objetivo {
-    display: none;
+  .botao:first-child {
+    border-radius: 40px 0 0 0;
+  }
+}
+.conteudo-objetivo{
     width: 100%;
     background: var(--texto-fundo);
     padding: 2em;
@@ -101,37 +85,10 @@ body {
     border-radius: 0 0 20px 20px;
 }
 
-/* Exibe apenas o conteúdo que possui a classe ativo */
-.conteudo-objetivo.ativo {
-    display: block;
-}
-
-.conteudo-objetivo h3 {
+.conteudo-objetivo h3{
     color: var(--verde);
-    margin-top: 0;
 }
 
-/* Estilo das caixas de texto (inputs) */
-.caixas-inputs {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 1.5em;
-}
-
-.input-objetivo {
-    width: 100%;
-    padding: 12px 16px;
-    border-radius: 8px;
-    border: 2px solid var(--botao-ativo);
-    background-color: #2D2A4A;
-    color: var(--branco);
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 16px;
-    box-sizing: border-box;
-    outline: none;
-}
-
-.input-objetivo:focus {
-    border-color: var(--verde);
+.conteudo-objetivo li{
+    margin: 10px 0;
 }

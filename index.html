@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -8,22 +8,64 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<body>
+
+    <section class="conteudo-principal">
+        <h1 class="titulo-principal">Meus objetivos do <span>ano</span></h1>
+
+        <!-- Botões principais -->
+        <div class="botoes">
+            <button class="botao ativo">Curso de inglês</button>
+            <button class="botao">Passar no ENEM</button>
+            <button class="botao">Ingressar-me profissionalmente</button>
+            <button class="botao">Currículo</button>
+        </div>
+
+        <!-- Conteúdo exibido para cada botão -->
+        <div class="aba-conteudo">
+            <!-- Objetivo 1: Curso de inglês -->
+            <div class="conteudo-objetivo ativo">
+                <h3>Objetivos para o Curso de inglês:</h3>
+                <div class="caixas-inputs">
+                    <input type="text" class="input-objetivo" placeholder="Objetivo 1 (ex: Estudar 30 min por dia)">
+                    <input type="text" class="input-objetivo" placeholder="Objetivo 2 (ex: Assistir filmes legendados)">
+                    <input type="text" class="input-objetivo" placeholder="Objetivo 3 (ex: Fazer conversação semanal)">
+                </div>
+            </div>
+
+            <!-- Objetivo 2: Passar no ENEM -->
+            <div class="conteudo-objetivo">
+                <h3>Objetivos para Passar no ENEM:</h3>
+                <div class="caixas-inputs">
+                    <input type="text" class="input-objetivo" placeholder="Objetivo 1 (ex: Fazer 1 redação por semana)">
+                    <input type="text" class="input-objetivo" placeholder="Objetivo 2 (ex: Resolver provas antigas)">
+                    <input type="text" class="input-objetivo" placeholder="Objetivo 3 (ex: Revisar matemática básica)">
+                </div>
+            </div>
+
+            <!-- Objetivo 3: Ingressar-me profissionalmente -->
+            <div class="conteudo-objetivo">
+                <h3>Objetivos para Ingressar-me profissionalmente:</h3>
+                <div class="caixas-inputs">
+                    <input type="text" class="input-objetivo" placeholder="Objetivo 1 (ex: Atualizar perfil no LinkedIn)">
+                    <input type="text" class="input-objetivo" placeholder="Objetivo 2 (ex: Fazer networking na área)">
+                    <input type="text" class="input-objetivo" placeholder="Objetivo 3 (ex: Aplicar para 5 vagas/semana)">
+                </div>
+            </div>
+
+            <!-- Objetivo 4: Currículo -->
+            <div class="conteudo-objetivo">
+                <h3>Objetivos para o Currículo:</h3>
+                <div class="caixas-inputs">
+                    <input type="text" class="input-objetivo" placeholder="Objetivo 1 (ex: Adicionar novos cursos)">
+                    <input type="text" class="input-objetivo" placeholder="Objetivo 2 (ex: Formatar em PDF limpo)">
+                    <input type="text" class="input-objetivo" placeholder="Objetivo 3 (ex: Pedir revisão para um profissional)">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
 </html>
-<div class="conteudo" id="conteudo">
-    <ul id="lista"></ul>
-</div>
-
-<script src="script.js"></script>
-<div class="botoes">
-    <button class="botao">Curso de inglês</button>
-    <button class="botao">Passar no ENEM</button>
-    <button class="botao">Ingressar-me profissionalmente</button>
-    <button class="botao">Currículo</button>
-</div>
-
-<div class="conteudo" id="conteudo">
-    <ul id="lista"></ul>
-</div>
-
-<script src="script.js"></script>
-
