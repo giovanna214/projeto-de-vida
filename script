@@ -1,14 +1,18 @@
-const botoes = document.querySelectorAll(".botao");
-const textos = document.querySelectorAll(".conteudo-objetivo");
+window.addEventListener("DOMContentLoaded", function () {
+    const botoes = document.querySelectorAll(".botao");
+    const textos = document.querySelectorAll(".conteudo-objetivo");
 
-for (let i = 0; i < botoes.length; i++) {
-    botoes[i].onclick = function () {
-        for (let j = 0; j < botoes.length; j++) {
-            botoes[j].classList.remove("ativo");
-            textos[j].classList.remove("ativo");
-        }
+    botoes.forEach(function (botao, indice) {
+        botao.addEventListener("click", function () {
+            // Remove 'ativo' de todos os botões e abas
+            for (let i = 0; i < botoes.length; i++) {
+                botoes[i].classList.remove("ativo");
+                textos[i].classList.remove("ativo");
+            }
 
-        botoes[i].classList.add("ativo");
-        textos[i].classList.add("ativo");
-    };
-}
+            // Adiciona 'ativo' apenas no botão e aba clicados
+            botao.classList.add("ativo");
+            textos[indice].classList.add("ativo");
+        });
+    });
+});
