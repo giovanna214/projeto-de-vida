@@ -1,0 +1,104 @@
+const botoes = document.querySelectorAll(".botao");
+const titulo = document.getElementById("titulo");
+const lista = document.getElementById("lista");
+
+const objetivos = [
+{
+    titulo: "Curso de inglês",
+
+    processos: [
+        "Estudar 30 minutos por dia",
+        "Aprender novas palavras diariamente",
+        "Praticar conversação",
+        "Assistir filmes e séries em inglês",
+        "Fazer exercícios da plataforma"
+    ]
+},
+
+{
+    titulo: "Passar no ENEM",
+
+    processos: [ 
+        "Estudar todas as áreas do conhecimento",
+        "Resolver questões antigas",
+        "Fazer simulados mensalmente",
+        "Treinar redação toda semana",
+        "Revisar os conteúdos com frequência"
+    ]
+},
+
+{
+    titulo: "Ingressar-me profissionalmente",
+
+    processos: [ 
+        "Desenvolver projetos pessoais",
+        "Criar um portfólio",
+        "Fazer cursos de qualificação",
+        "Enviar currículos para empresas",
+        "Preparar-me para entrevistas"]
+},
+
+{
+    titulo: "Currículo",
+
+    processos: []
+}
+
+];
+
+function mostrarObjetivo(indice){
+
+    titulo.textContent = objetivos[indice].titulo;
+
+    lista.innerHTML = "";
+
+    objetivos[indice].processos.forEach(processo => {
+
+        const item = document.createElement("li");
+        item.textContent = processo;
+        lista.appendChild(item);
+
+    });
+
+}
+
+botoes.forEach((botao, indice) => {
+
+    botao.addEventListener("click", () => {
+        mostrarObjetivo(indice);
+    });
+
+});
+
+// Mostra o primeiro objetivo ao abrir a página
+mostrarObjetivo(0);
+```javascript
+function mostrarIngles() {
+
+    const lista = document.getElementById("lista");
+
+    lista.innerHTML = `
+        <h2>📚 Meus próximos passos para aprender inglês</h2>
+
+        <li>🇬🇧 Aprender o básico da língua inglesa</li>
+
+        <li>🧠 Aumentar meu vocabulário todos os dias</li>
+
+        <li>🎧 Praticar listening com músicas, filmes e vídeos em inglês</li>
+
+        <li>🗣️ Treinar minha conversação e pronúncia</li>
+
+        <li>✍️ Praticar escrita em inglês</li>
+
+        <li>📖 Estudar gramática e tempos verbais</li>
+
+        <li>💬 Tentar pensar e falar em inglês diariamente</li>
+
+        <li>🎯 Fazer um curso de inglês</li>
+
+        <li>🌎 Praticar com pessoas que falam inglês</li>
+
+        <li>🏆 Alcançar um nível de fluência cada vez maior</li>
+    `;
+}
+```
