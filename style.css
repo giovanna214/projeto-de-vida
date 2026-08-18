@@ -103,7 +103,7 @@ body {
 
 /* Exibe apenas o bloco com a classe ativo */
 .conteudo-objetivo.ativo {
-    display: block !important;
+    display: block;
 }
 
 .conteudo-objetivo h3 {
@@ -130,7 +130,6 @@ body {
     font-size: 16px;
     box-sizing: border-box;
     outline: none;
-    cursor: default;
 }
 
 .input-objetivo:focus {

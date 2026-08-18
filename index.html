@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meus objetivos do ano</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -16,10 +15,10 @@
 
         <!-- Botões principais -->
         <div class="botoes">
-            <button type="button" class="botao ativo">Curso de inglês</button>
-            <button type="button" class="botao">Passar no ENEM</button>
-            <button type="button" class="botao">Ingressar-me profissionalmente</button>
-            <button type="button" class="botao">Currículo</button>
+            <button class="botao ativo">Curso de inglês</button>
+            <button class="botao">Passar no ENEM</button>
+            <button class="botao">Ingressar-me profissionalmente</button>
+            <button class="botao">Currículo</button>
         </div>
 
         <!-- Conteúdo exibido para cada um dos 4 botões -->
@@ -28,9 +27,9 @@
             <div class="conteudo-objetivo ativo">
                 <h3>Objetivos para o Curso de inglês:</h3>
                 <div class="caixas-inputs">
-                    <input type="text" class="input-objetivo" value="Estudar uma hora por dia" readonly>
-                    <input type="text" class="input-objetivo" value="Assistir filmes e séries legendadas" readonly>
-                    <input type="text" class="input-objetivo" value="Praticar a conversação" readonly>
+                    <input type="text" class="input-objetivo" placeholder="Objetivo 1 (ex: Estudar 30 min por dia)">
+                    <input type="text" class="input-objetivo" placeholder="Objetivo 2 (ex: Assistir filmes legendados)">
+                    <input type="text" class="input-objetivo" placeholder="Objetivo 3 (ex: Fazer conversação semanal)">
                 </div>
             </div>
 
@@ -38,9 +37,9 @@
             <div class="conteudo-objetivo">
                 <h3>Objetivos para Passar no ENEM:</h3>
                 <div class="caixas-inputs">
-                    <input type="text" class="input-objetivo" value="Estudar de três a quatro horas por dia" readonly>
-                    <input type="text" class="input-objetivo" value="Fazer simulados" readonly>
-                    <input type="text" class="input-objetivo" value="Praticar redação" readonly>
+                    <input type="text" class="input-objetivo" placeholder="Objetivo 1 (ex: Fazer 1 redação por semana)">
+                    <input type="text" class="input-objetivo" placeholder="Objetivo 2 (ex: Resolver provas antigas)">
+                    <input type="text" class="input-objetivo" placeholder="Objetivo 3 (ex: Revisar matemática básica)">
                 </div>
             </div>
 
@@ -48,23 +47,25 @@
             <div class="conteudo-objetivo">
                 <h3>Objetivos para Ingressar-me profissionalmente:</h3>
                 <div class="caixas-inputs">
-                    <input type="text" class="input-objetivo" value="Arrumar um emprego onde me encaixe" readonly>
-                    <input type="text" class="input-objetivo" value="Focar no meu futuro" readonly>
+                    <input type="text" class="input-objetivo" placeholder="Objetivo 1 (ex: Atualizar perfil no LinkedIn)">
+                    <input type="text" class="input-objetivo" placeholder="Objetivo 2 (ex: Fazer networking na área)">
+                    <input type="text" class="input-objetivo" placeholder="Objetivo 3 (ex: Aplicar para 5 vagas/semana)">
                 </div>
             </div>
 
-            <!-- Botão 4: Currículo (LinkedIn) -->
+            <!-- Botão 4: Currículo (Link do LinkedIn) -->
             <div class="conteudo-objetivo">
                 <h3>Meu Perfil do LinkedIn:</h3>
-                <p class="descricao-linkedin">Acesse meu perfil profissional através do link abaixo:</p>
+                <p class="descricao-linkedin">Insira ou acesse o link do seu currículo / perfil profissional abaixo:</p>
                 <div class="container-linkedin">
-                    <input type="url" id="input-linkedin" class="input-objetivo" value="Cole o seu link aqui" readonly>
-                    <a id="btn-linkedin" href="#" target="_blank" rel="noopener noreferrer" class="btn-abrir-link">Abrir Link</a>
+                    <input type="url" id="input-linkedin" class="input-objetivo" placeholder="https://www.linkedin.com/in/seu-perfil" value="https://www.linkedin.com/in/">
+                    <a id="btn-linkedin" href="https://www.linkedin.com/in/" target="_blank" rel="noopener noreferrer" class="btn-abrir-link">Abrir LinkedIn</a>
                 </div>
             </div>
         </div>
     </section>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
