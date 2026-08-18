@@ -62,7 +62,7 @@ body {
     transition: 0.3s;
 }
 
-/* Estado ativo do botão clicado */
+/* Estado ativo do botão selecionado */
 .botao.ativo {
     background-color: var(--botao-ativo);
     border-bottom: 4px solid var(--verde);
@@ -91,7 +91,7 @@ body {
     width: 100%;
 }
 
-/* Oculta os conteúdos por padrão */
+/* Oculta todos os blocos de conteúdo por padrão */
 .conteudo-objetivo {
     display: none;
     width: 100%;
@@ -101,7 +101,7 @@ body {
     border-radius: 0 0 20px 20px;
 }
 
-/* Exibe apenas o conteúdo que possui a classe ativo */
+/* Exibe apenas o bloco com a classe ativo */
 .conteudo-objetivo.ativo {
     display: block;
 }
@@ -111,7 +111,7 @@ body {
     margin-top: 0;
 }
 
-/* Estilo das caixas de texto (inputs) */
+/* Estilo das 3 caixas de texto */
 .caixas-inputs {
     display: flex;
     flex-direction: column;
