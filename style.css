@@ -111,7 +111,7 @@ body {
     margin-top: 0;
 }
 
-/* Estilo das 3 caixas de texto */
+/* Estilo das caixas de texto */
 .caixas-inputs {
     display: flex;
     flex-direction: column;
@@ -134,4 +134,43 @@ body {
 
 .input-objetivo:focus {
     border-color: var(--verde);
+}
+
+/* Estilos específicos para a aba do LinkedIn */
+.descricao-linkedin {
+    margin-bottom: 1.5em;
+    font-size: 16px;
+    color: var(--branco);
+}
+
+.container-linkedin {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    .container-linkedin {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.btn-abrir-link {
+    display: inline-block;
+    text-align: center;
+    padding: 12px 24px;
+    background-color: var(--verde);
+    color: var(--cor-de-fundo);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: 'Chakra Petch', sans-serif;
+    transition: 0.3s ease;
+    white-space: nowrap;
+}
+
+.btn-abrir-link:hover {
+    background-color: #5ce646;
+    transform: translateY(-2px);
 }
