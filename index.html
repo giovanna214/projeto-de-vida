@@ -4,68 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meus objetivos do ano</title>
+    <title>Meus Objetivos do Ano</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <section class="conteudo-principal">
-        <h1 class="titulo-principal">Meus objetivos do <span>ano</span></h1>
+        <h2 class="titulo-principal">Meus Objetivos do Ano <span>_</span></h2>
 
-        <!-- Botões principais -->
         <div class="botoes">
-            <button class="botao ativo">Curso de inglês</button>
-            <button class="botao">Passar no ENEM</button>
-            <button class="botao">Ingressar-me profissionalmente</button>
-            <button class="botao">Currículo</button>
-        </div>
+            <button onclick="window.open('pintura.html', '_blank')">
+                Pintura
+            </button>
 
-        <!-- Conteúdo exibido para cada um dos 4 botões -->
-        <div class="aba-conteudo">
-            <!-- Botão 1: Curso de inglês -->
-            <div class="conteudo-objetivo ativo">
-                <h3>Objetivos para o Curso de inglês:</h3>
-                <div class="caixas-inputs">
-                    <input type="text" class="input-objetivo" placeholder="Objetivo 1 (ex: Estudar 30 min por dia)">
-                    <input type="text" class="input-objetivo" placeholder="Objetivo 2 (ex: Assistir filmes legendados)">
-                    <input type="text" class="input-objetivo" placeholder="Objetivo 3 (ex: Fazer conversação semanal)">
-                </div>
-            </div>
+            <button onclick="window.open('violino.html', '_blank')">
+                Violino
+            </button>
 
-            <!-- Botão 2: Passar no ENEM -->
-            <div class="conteudo-objetivo">
-                <h3>Objetivos para Passar no ENEM:</h3>
-                <div class="caixas-inputs">
-                    <input type="text" class="input-objetivo" placeholder="Objetivo 1 (ex: Fazer 1 redação por semana)">
-                    <input type="text" class="input-objetivo" placeholder="Objetivo 2 (ex: Resolver provas antigas)">
-                    <input type="text" class="input-objetivo" placeholder="Objetivo 3 (ex: Revisar matemática básica)">
-                </div>
-            </div>
+            <button onclick="window.open('cozinhar.html', '_blank')">
+                Cozinhar
+            </button>
 
-            <!-- Botão 3: Ingressar-me profissionalmente -->
-            <div class="conteudo-objetivo">
-                <h3>Objetivos para Ingressar-me profissionalmente:</h3>
-                <div class="caixas-inputs">
-                    <input type="text" class="input-objetivo" placeholder="Objetivo 1 (ex: Atualizar perfil no LinkedIn)">
-                    <input type="text" class="input-objetivo" placeholder="Objetivo 2 (ex: Fazer networking na área)">
-                    <input type="text" class="input-objetivo" placeholder="Objetivo 3 (ex: Aplicar para 5 vagas/semana)">
-                </div>
-            </div>
-
-            <!-- Botão 4: Currículo (Link do LinkedIn) -->
-            <div class="conteudo-objetivo">
-                <h3>Meu Perfil do LinkedIn:</h3>
-                <p class="descricao-linkedin">Insira ou acesse o link do seu currículo / perfil profissional abaixo:</p>
-                <div class="container-linkedin">
-                    <input type="url" id="input-linkedin" class="input-objetivo" placeholder="https://www.linkedin.com/in/seu-perfil" value="https://www.linkedin.com/in/">
-                    <a id="btn-linkedin" href="https://www.linkedin.com/in/" target="_blank" rel="noopener noreferrer" class="btn-abrir-link">Abrir LinkedIn</a>
-                </div>
-            </div>
+            <button onclick="window.open('curriculo.html', '_blank')">
+                Currículo
+            </button>
         </div>
     </section>
 
-    <script src="script.js"></script>
 </body>
 
 </html>

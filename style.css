@@ -1,176 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
-
-:root {
-    --cor-de-fundo: #1E1E1E;
-    --verde: #6FFF57;
-    --branco: #FFFFFF;
-    --botao-ativo: #3A375E;
-    --botao-inativo: rgba(58, 55, 94, 0.5);
-    --texto-fundo: rgba(58, 55, 94, 0.3);
-}
-
+/* Fundo da página */
 body {
-    background-color: var(--cor-de-fundo);
-    color: var(--branco);
-    font-family: 'Chakra Petch', sans-serif;
     margin: 0;
-    padding: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFF9C4; /* Amarelo bem clarinho */
+    color: #1E3A5F;
+    text-align: center;
 }
 
+/* Área principal */
 .conteudo-principal {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
+    margin-top: 80px;
+    padding: 30px;
 }
 
+/* Título */
 .titulo-principal {
-    text-align: left;
-    width: 100%;
-    font-size: 32px;
-    margin-bottom: 1em;
+    font-size: 42px;
+    color: #1565C0; /* Azul */
 }
 
 .titulo-principal span {
-    color: var(--verde);
+    color: #64B5F6; /* Azul clarinho */
 }
 
+/* Botões */
 .botoes {
-    display: block;
-    width: 100%;
+    margin-top: 40px;
 }
 
-.botao {
-    font-family: "Chakra Petch", sans-serif;
-    background-color: var(--botao-inativo);
-    color: var(--branco);
-    display: flex;
-    justify-content: center;
-    padding: 1em;
+button {
+    background-color: #BBDEFB; /* Azul clarinho */
+    color: #0D47A1;
+    border: 2px solid #64B5F6;
+    border-radius: 12px;
+    padding: 15px 30px;
+    margin: 10px;
     font-size: 18px;
-    align-items: center;
-    width: 100%;
-    border-bottom: 4px solid var(--botao-ativo);
-    border-left: 2px solid var(--botao-ativo);
-    border-right: 2px solid var(--botao-ativo);
-    border-top: none;
+    font-weight: bold;
     cursor: pointer;
-    box-sizing: border-box;
     transition: 0.3s;
 }
 
-/* Estado ativo do botão selecionado */
-.botao.ativo {
-    background-color: var(--botao-ativo);
-    border-bottom: 4px solid var(--verde);
+/* Efeito ao passar o mouse */
+button:hover {
+    background-color: #90CAF9;
+    transform: scale(1.05);
 }
 
-.botao:first-child {
-    border-radius: 20px 20px 0 0;
+/* Páginas internas */
+h1 {
+    color: #1565C0;
+    margin-top: 50px;
 }
 
-/* Responsividade para telas maiores */
-@media screen and (min-width: 768px) {
-    .botoes {
-        display: flex;
-    }
-
-    .botao:first-child {
-        border-radius: 20px 0 0 0;
-    }
-
-    .botao:last-child {
-        border-radius: 0 20px 0 0;
-    }
+p {
+    font-size: 20px;
+    max-width: 700px;
+    margin: 20px auto;
+    line-height: 1.6;
 }
 
-.aba-conteudo {
-    width: 100%;
-}
-
-/* Oculta todos os blocos de conteúdo por padrão */
-.conteudo-objetivo {
-    display: none;
-    width: 100%;
-    background: var(--texto-fundo);
-    padding: 2em;
-    box-sizing: border-box;
-    border-radius: 0 0 20px 20px;
-}
-
-/* Exibe apenas o bloco com a classe ativo */
-.conteudo-objetivo.ativo {
-    display: block;
-}
-
-.conteudo-objetivo h3 {
-    color: var(--verde);
-    margin-top: 0;
-}
-
-/* Estilo das caixas de texto */
-.caixas-inputs {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 1.5em;
-}
-
-.input-objetivo {
-    width: 100%;
-    padding: 12px 16px;
-    border-radius: 8px;
-    border: 2px solid var(--botao-ativo);
-    background-color: #2D2A4A;
-    color: var(--branco);
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 16px;
-    box-sizing: border-box;
-    outline: none;
-}
-
-.input-objetivo:focus {
-    border-color: var(--verde);
-}
-
-/* Estilos específicos para a aba do LinkedIn */
-.descricao-linkedin {
-    margin-bottom: 1.5em;
-    font-size: 16px;
-    color: var(--branco);
-}
-
-.container-linkedin {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-@media screen and (min-width: 768px) {
-    .container-linkedin {
-        flex-direction: row;
-        align-items: center;
-    }
-}
-
-.btn-abrir-link {
+/* Link de voltar */
+a {
     display: inline-block;
-    text-align: center;
-    padding: 12px 24px;
-    background-color: var(--verde);
-    color: var(--cor-de-fundo);
-    font-weight: bold;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #BBDEFB;
+    color: #0D47A1;
     text-decoration: none;
-    border-radius: 8px;
-    font-family: 'Chakra Petch', sans-serif;
-    transition: 0.3s ease;
-    white-space: nowrap;
+    border-radius: 10px;
+    font-weight: bold;
 }
 
-.btn-abrir-link:hover {
-    background-color: #5ce646;
-    transform: translateY(-2px);
+a:hover {
+    background-color: #90CAF9;
 }
